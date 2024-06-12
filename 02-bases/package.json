@@ -1,0 +1,15 @@
+{
+  "name": "02-bases",
+  "version": "0.0.1",
+  "description": "Esta es mi primera aplicación creada unicamente con Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "start:dev": "echo 'Hola mundo desde start:dev'",
+    "start:prod": "echo 'Hola mundo desde start:prod'",
+    "fabio": "echo 'Hola mundo desde Fabio'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabio Escobar",
+  "license": "ISC"
+}
