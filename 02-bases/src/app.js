@@ -1,16 +1,7 @@
-const templateReceived = require("./js-foundation/04-arrow");
+const factoryFuntion = require("./js-foundation/05-factory-functions");
 
-// const { env } = process
-// console.log( env );
+const buildPerson = factoryFuntion.buildPerson;
 
-// const heroesArr = ['Superman', 'Flash', 'Batman']
-// const [, , batman] = heroesArr;
-// console.log(batman);
+const fabio = { name: "Fabio", birthday: "04-04-1990" }
+console.log(buildPerson(fabio)); 
 
-const templateFunc = templateReceived.findName;
-
-templateFunc(2, (error, user) => {
-	if (error) throw new Error(error);
-
-	console.log(user);
-});
