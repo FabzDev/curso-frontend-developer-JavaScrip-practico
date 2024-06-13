@@ -1,4 +1,16 @@
+const templateReceived = require("./js-foundation/04-arrow");
 
-const templateReceived = require('./js-foundation/01-template');
+// const { env } = process
+// console.log( env );
 
-console.log( templateReceived );
+// const heroesArr = ['Superman', 'Flash', 'Batman']
+// const [, , batman] = heroesArr;
+// console.log(batman);
+
+const templateFunc = templateReceived.findName;
+
+templateFunc(2, (error, user) => {
+	if (error) throw new Error(error);
+
+	console.log(user);
+});
