@@ -1,7 +1,8 @@
-const factoryFuntion = require("./js-foundation/05-factory-functions");
+const { uuid, getAge } = require("./plugins")
 
-const buildPerson = factoryFuntion.buildPerson;
+const promiseGetPoke = require("./js-foundation/06-promises");
 
-const fabio = { name: "Fabio", birthday: "04-04-1990" }
-console.log(buildPerson(fabio)); 
-
+promiseGetPoke(2)
+.then( pokemon => console.log(pokemon.name))
+.catch( error => console.log("Intenta de nuevo"))
+.finally(() => console.log('Finalizado'))
